@@ -148,7 +148,7 @@ const Navbar = () => {
                   fontWeight:'600',
                   display: "block",
                   color: "black",
-                  fontSize: "1.1em",
+                  fontSize: ".9em",
                   ml:'10px',
                   "&:hover": { color: "#F9004D",},
                 }}
@@ -162,7 +162,7 @@ const Navbar = () => {
                 display: 'flex',
                 
               }}
-              ml="270px"
+              ml="90px"
             >
               {icons.map((icon) => (
                 <IconButton
@@ -192,10 +192,11 @@ const Navbar = () => {
               padding: "10px 30px",
               fontWeight: "360",
               borderRadius: "8px",
+              "&:hover": { border:'2.5px solid transparent',color:'white'},
             }}
             sx={{
               display: { xs: "none", sm: "none", md: "block" },
-              "&:hover": { backgroundColor: "#F9004D",border:'none',color:'white',mb:'5px'},
+              "&:hover": { backgroundColor: "#F9004D",border:'2.5px solid #F9004D',color:'white'},
             }}
           >
             Buy Now

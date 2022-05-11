@@ -32,7 +32,7 @@ const clientsComponent = () => {
           the majority have suffered alteration.
         </Typography>
 
-        <Box sx={{ display: "flex", flexWrap: "wrap",justifyContent:'center',width:'100%' }}>
+        <Box sx={{ display: "flex", flexWrap: "wrap",justifyContent:'center',width:'98%',margin:'auto' }}>
           {brands.map((brand) => (
             <Box
               sx={{

@@ -34,14 +34,15 @@ const ProjectsComponent = () => {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          width: "100%",
+          width: "98%",
           gap: "25px",
+          margin:'auto'
         }}
       >
         {projects.map((project) => (
           <Box
             sx={{
-              width: { lg: "32%", md: "50%", sm: "100%" },
+              width: { lg: "31%", md: "50%", sm: "100%" },
               minHeight: "600px",
               borderRadius: "20px",
               mt: "25px",

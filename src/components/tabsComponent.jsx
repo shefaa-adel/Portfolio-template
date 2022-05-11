@@ -20,6 +20,7 @@ function TabPanel(props) {
       id={`simple-tabpanel-${index}`}
       aria-labelledby={`simple-tab-${index}`}
       {...other}
+     
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
@@ -51,7 +52,7 @@ export default function BasicTabs() {
   };
 
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box sx={{ width: "95%" }}>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Tabs
           value={value}
@@ -59,10 +60,10 @@ export default function BasicTabs() {
           aria-label="basic tabs example"
          
         >
-          <Tab  sx={{fontSize:'1.1em'}} label="Main Skills" {...a11yProps(0)} />
-          <Tab  sx={{fontSize:'1.1em'}} label="Awards" {...a11yProps(1)} />
-          <Tab  sx={{fontSize:'1.1em'}} label="Experience" {...a11yProps(2)} />
-          <Tab  sx={{fontSize:'1.1em'}} label="Education & Certification" {...a11yProps(3)} />
+          <Tab  sx={{fontSize:'1em'}} label="Main Skills" {...a11yProps(0)} />
+          <Tab  sx={{fontSize:'1em'}} label="Awards" {...a11yProps(1)} />
+          <Tab  sx={{fontSize:'1em'}} label="Experience" {...a11yProps(2)} />
+          <Tab  sx={{fontSize:'1em'}} label="Education & Certification" {...a11yProps(3)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>

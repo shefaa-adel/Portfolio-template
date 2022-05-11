@@ -11,8 +11,8 @@ const AboutComponent = () => {
         sx={{
           display: "flex",
           flexWrap:'wrap',
-          width: "97%",
-          px: "20px",
+          width: "96%",
+          px: {lg:"20px"},
           justifyContent: "space-between",
           position: "relative",
           minHeight: "620px",
@@ -21,7 +21,7 @@ const AboutComponent = () => {
         <Box
           sx={{
            
-            width: {lg:"38%",md:"38%",sm:"100%"},
+            width: {lg:"38%",md:"38%",sm:"95%"},
             minHeight: "830px",
             position: "absolute",
             top: "-140px",
@@ -34,13 +34,13 @@ const AboutComponent = () => {
         ></Box>
         <Box
           sx={{
-            width: {lg:"55%",md:"55%",sm:"100%"},
+            width: {lg:"55%",md:"55%",sm:"95%"},
             // backgroundColor: "blue",
             minHeight: "100%",
             position: "absolute",
-            right: "20px",
+            right: {lg:"20px",md:'20px',sm:'0px'},
             pt: "70px",
-            pl: "60px",
+            pl: "30px",
           }}
         >
           <Typography
@@ -49,14 +49,14 @@ const AboutComponent = () => {
           >
             About Me
           </Typography>
-          <Typography sx={{fontSize:'1.2em',width:'90%',mt:'30px',mb:'50px'}} color="gray">
+          <Typography sx={{fontSize:'1.2em',width:'95%',mt:'30px',mb:'50px'}} color="gray">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered in some form, by injected humour, or
             randomised words which dont look even slightly believable. If you
             are going to use a passage of Lorem Ipsum,
           </Typography>
 
-          <TabsComponent/>
+          <TabsComponent />
         </Box>
       </Box>
     </>

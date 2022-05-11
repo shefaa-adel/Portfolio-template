@@ -19,7 +19,7 @@ const Cover = () => {
     >
       <Navbar />
       <Box sx={{width:'60%',mt:'130px',p:'20px'}}>
-        <Typography sx={{ textTransform: "uppercase", letterSpacing: "3px",wordSpacing: "3px",fontSize:'1.2em' }}>
+        <Typography sx={{ textTransform: "uppercase", letterSpacing: "3px",wordSpacing: "3px",fontSize:'1.1em' }}>
           Freelance Digital Designer
         </Typography>
 
