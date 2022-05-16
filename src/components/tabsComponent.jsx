@@ -60,7 +60,7 @@ export default function BasicTabs() {
           aria-label="basic tabs example"
          
         >
-          <Tab  sx={{fontSize:'1em'}} label="Main Skills" {...a11yProps(0)} />
+          <Tab  sx={{fontSize:'1em'}} label="Main Skills" {...a11yProps(0)} /> 
           <Tab  sx={{fontSize:'1em'}} label="Awards" {...a11yProps(1)} />
           <Tab  sx={{fontSize:'1em'}} label="Experience" {...a11yProps(2)} />
           <Tab  sx={{fontSize:'1em'}} label="Education & Certification" {...a11yProps(3)} />

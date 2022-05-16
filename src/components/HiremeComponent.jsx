@@ -3,9 +3,6 @@ import persomImg from "../assets/about-6.jpg";
 import { Typography, Box } from "@mui/material";
 import {
   FormControl,
-  InputLabel,
-  Input,
-  FormHelperText,
   TextField,
   Button,
 } from "@mui/material";
@@ -16,7 +13,7 @@ const HiremeComponent = () => {
       sx={{
         display: "flex",
         flexWrap: "wrap",
-        width: "97%",
+        width: "95%",
         px: "20px",
         justifyContent: "space-between",
         mt: "100px",

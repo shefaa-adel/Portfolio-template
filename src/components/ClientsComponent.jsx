@@ -13,7 +13,7 @@ const brands = [brand1, brand2, brand3, brand4, brand5, brand6];
 const clientsComponent = () => {
   return (
     <>
-      <Box sx={{ textAlign: "center", width: "97%", px: "20px", mt: "180px" }}>
+      <Box sx={{ textAlign: "center", width: "95%", px: "20px", mt: "180px" }}>
         <Typography variant="h1" sx={{ fontSize: "4.1em", fontWeight: "700" }}>
           My Best Clients
         </Typography>
@@ -32,12 +32,23 @@ const clientsComponent = () => {
           the majority have suffered alteration.
         </Typography>
 
-        <Box sx={{ display: "flex", flexWrap: "wrap",justifyContent:'center',width:'98%',margin:'auto' }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: {
+              lg: "space-between",
+              md: "center",
+              sm: "center",
+              xs: "center",
+            },
+            width: "100%",
+          }}
+        >
           {brands.map((brand) => (
             <Box
               sx={{
-                
-                width: {lg:"33.2%",md:"49%",sm:"99%",xs:'99%'},
+                width: { lg: "33.2%", md: "49%", sm: "90%", xs: "90%" },
                 height: "200px",
                 border: ".25px solid #E8ECEF",
                 textAlign: "center",

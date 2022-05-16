@@ -11,7 +11,7 @@ const projects = [project1, project3, project2, project4, project1, project4];
 
 const ProjectsComponent = () => {
   return (
-    <Box sx={{ textAlign: "center", width: "97%", px: "20px", mt: "130px" }}>
+    <Box sx={{ textAlign: "center", width: "95%", px: "20px", mt: "130px", mr:'auto',ml:'auto' }}>
       <Typography variant="h1" sx={{ fontSize: "4.1em", fontWeight: "700" }}>
         My Latest Projects
       </Typography>
@@ -33,16 +33,16 @@ const ProjectsComponent = () => {
         sx={{
           display: "flex",
           flexWrap: "wrap",
-          justifyContent: "center",
-          width: "98%",
-          gap: "25px",
+          justifyContent: {lg:"space-between",md:'space-around',sm:'center',xs:'center'},
+          width: "100%",
+          
           margin:'auto'
         }}
       >
         {projects.map((project) => (
           <Box
             sx={{
-              width: { lg: "31%", md: "50%", sm: "100%" },
+              width: { lg: "31%", md: "45%", sm: "90%" },
               minHeight: "600px",
               borderRadius: "20px",
               mt: "25px",
